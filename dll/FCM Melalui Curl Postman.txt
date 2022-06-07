@@ -1,0 +1,12 @@
+curl --location --request POST 'https://fcm.googleapis.com/fcm/send' \
+--header 'Authorization: key='GANTI_INI_DENGAN_SERVER_KEY_KALIAN' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "to": "GANTI_DENGAN_TOKEN_DARI_APLIKASI_KALIAN",
+    "priority": "high",
+    "soundName": "default",
+    "notification": {
+        "title": "Halo Prawito",
+        "body": "Ini adalah FCM melalui postman"
+    }
+}'
